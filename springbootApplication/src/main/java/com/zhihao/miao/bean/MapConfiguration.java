@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 配置测试
+ * 集合初始化配置
  *
  * @author yiyh
  */
 @SpringBootConfiguration
-public class ConfigurationTest {
+public class MapConfiguration {
 
     /**
      * 创建一个map结合bean
