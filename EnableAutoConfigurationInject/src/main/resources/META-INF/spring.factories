@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  core.bean.CatConfiguration,\
+  core.bean.DogConfiguration,\
+  core.bean.People
