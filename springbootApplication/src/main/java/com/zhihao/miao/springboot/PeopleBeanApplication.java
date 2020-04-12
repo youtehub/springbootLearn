@@ -10,10 +10,10 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @author yiyh
  */
 @SpringBootApplication(exclude = People.class)
-public class ApplicationPeople {
+public class PeopleBeanApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(ApplicationPeople.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(PeopleBeanApplication.class, args);
         People people = context.getBean(People.class);
         System.out.println(people);
     }

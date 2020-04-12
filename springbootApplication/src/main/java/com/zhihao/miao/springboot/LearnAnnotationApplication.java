@@ -5,18 +5,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import java.util.Map;
-
 /**
- * springboot 启动类
+ * 学习注解的 启动类
  *
  * @author yiyh
  */
 @SpringBootApplication(scanBasePackages = "com.zhihao.miao")
-public class Application {
+public class LearnAnnotationApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(LearnAnnotationApplication.class, args);
         Cat cat = context.getBean(Cat.class);
         System.out.println(cat);
     }
