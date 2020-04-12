@@ -17,7 +17,7 @@ public class CatConfiguration {
      * @return cat对象
      */
     @Bean
-    public Cat cat() {
+    public Cat initCat() {
         return new Cat();
     }
 }

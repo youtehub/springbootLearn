@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 集合初始化配置
+ * 用户信息初始化配置
  *
  * @author yiyh
  */
 @SpringBootConfiguration
-public class MapConfiguration {
+public class UserInfoConfiguration {
 
     /**
      * 创建一个map结合bean
@@ -20,11 +20,11 @@ public class MapConfiguration {
      * @return map集合bean
      */
     @Bean
-    public Map createMap() {
+    public Map createUserInfo() {
         final int MAP_SIZE = 2;
-        Map map = new HashMap<>(MAP_SIZE);
-        map.put("username", "zhihao.miao");
-        map.put("age", 27);
-        return map;
+        Map userInfo = new HashMap<>(MAP_SIZE);
+        userInfo.put("username", "zhihao.miao");
+        userInfo.put("age", 27);
+        return userInfo;
     }
 }

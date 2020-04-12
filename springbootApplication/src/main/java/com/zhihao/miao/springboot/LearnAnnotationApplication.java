@@ -14,9 +14,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class LearnAnnotationApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(LearnAnnotationApplication.class, args);
-        Cat cat = context.getBean(Cat.class);
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(LearnAnnotationApplication.class, args);
+        Cat cat = applicationContext.getBean(Cat.class);
         System.out.println(cat);
-        System.out.println();
     }
 }

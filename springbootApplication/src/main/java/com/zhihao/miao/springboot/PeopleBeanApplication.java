@@ -16,6 +16,5 @@ public class PeopleBeanApplication {
         ConfigurableApplicationContext context = SpringApplication.run(PeopleBeanApplication.class, args);
         People people = context.getBean(People.class);
         System.out.println(people);
-        System.out.println();
     }
 }
