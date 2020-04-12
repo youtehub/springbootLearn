@@ -11,6 +11,7 @@ import java.util.Map;
 /**
  * 用户类
  *
+ * ps:运行这个类时，注意注释掉其他两个Application的@SpringBootApplication
  * @author yiyh
  */
 @SpringBootApplication
@@ -26,7 +27,7 @@ public class InitializedApplication {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(InitializedApplication.class, args);
         applicationContext.getBean(Runnable.class).run();
         System.out.println(applicationContext.getBean(User.class));
-        Map userInfo = (Map) applicationContext.getBean("createUserInfo");
+        Map userInfo = (Map) applicationContext.getBean("createLoadedUser");
         int age = (int) userInfo.get("age");
         System.out.println("age==" + age);
     }
