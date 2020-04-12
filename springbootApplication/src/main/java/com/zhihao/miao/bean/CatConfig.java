@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @author yiyh
  */
 @Configuration
-public class MyConfig {
+public class CatConfig {
 
     /**
      * 初始化cat

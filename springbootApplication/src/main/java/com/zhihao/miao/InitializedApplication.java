@@ -29,5 +29,6 @@ public class InitializedApplication {
         Map map = (Map) context.getBean("createMap");
         int age = (int) map.get("age");
         System.out.println("age==" + age);
+        System.out.println();
     }
 }
